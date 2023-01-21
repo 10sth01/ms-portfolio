@@ -1,0 +1,378 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>Mark Santos | Home</title>
+	
+	<link rel="icon" href="Asset 1.png">
+	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+	
+	<style>
+		
+		html {
+			scroll-behavior: smooth;
+		}
+		
+		::-webkit-scrollbar {
+			width: 10px;
+		}
+
+		::-webkit-scrollbar-thumb {
+			background-color: #D3D3D2;
+			border-radius: 10px;
+		}
+
+		::-webkit-scrollbar-thumb:hover {
+			background-color: #a5a5a1;
+		}
+
+		::-webkit-scrollbar-track {
+			background-color: rgb(26, 26, 26);
+		}
+		
+		body {
+			font-family: Inter;
+			margin: 0px;
+			padding: 0px;
+			background-color: #9f1d29;
+		}
+				
+		.header {
+			display: flex;
+			padding: 8px 8px;
+			background-color: #6b1c22;
+			font-family: Inter Thin;
+			font-size: 10px;
+			color:#FFFFFF;
+			justify-content: space-between;
+			align-self: flex-start;
+			position: sticky;
+		}
+		
+		.item {
+			margin: 0px 3px;
+		}
+
+		.link {
+			z-index: 1;
+			margin: 0px 10px;
+			padding: 0px 15px 0px 15px;
+		}
+		
+		.link:hover {
+			background-image: url("Asset 2.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			cursor: pointer;
+			text-shadow: none;
+			color: black;
+			transition: 0.3s;
+		}
+		
+		#CurrentPage {
+			background-image: url("Asset 2.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			cursor: pointer;
+			text-shadow: 2px 3.5px 1px #ffffff;
+			color: black;
+		}
+		
+		.slider-frame {
+			z-index: -2;
+			overflow:hidden;
+			height: 300px;
+			width: 819.60px;
+		}
+		
+		@-webkit-keyframes slide_animation{
+			0% {left:0px;}
+			10% {left:0px;}
+			20% {left:819.60px;}
+			30% {left:819.60px;}
+			40% {left:1639.2px;}
+			50% {left:1639.2px;}
+			60% {left:819.60px;}
+			70% {left:819.60px;}
+			80% {left:0px;}
+			90% {left:0px;}
+			100% {left:0px;}
+		}
+		
+		.slide-images {
+			width: 3000px;
+			height: 800px;
+			margin: 0 0 0 -1639.2px;
+			position: relative;
+			-webkit-animation-name: slide_animation;
+			-webkit-animation-duration: 33s;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-direction: alternate;
+			-webkit-animation-play-state: running;
+		}
+		
+		.slide-image {
+			height: 300px;
+		}
+
+		.img-container {
+			height: 300px;
+			width: 819.6px;
+			position: relative;
+			float: left;
+			}
+		
+		#Logo {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		#Logo:hover {
+			cursor: pointer;
+		}
+	
+		#Title {
+			font-size: 20px;
+		}
+		
+		#Navigation {
+			display: flex;
+			font-family: "Inter Black";
+			font-style: italic ;
+			font-size: 15px;
+			text-transform: uppercase;
+			align-items: center;
+			text-shadow: 2px 3.5px 1px #000000;
+		}
+
+		.gradient {
+			position: absolute;
+			z-index: -1;
+			height: 300px;
+			width: 100%;
+			background-image: linear-gradient(to right, rgb(26, 26, 26), 75%, rgba(26, 26, 26, 0.2), 80%, rgba(26, 26, 26, 0));
+		}
+
+		.hero {
+			display: flex;
+			justify-content: space-between;
+		}
+		
+		#NameHeader{
+			display: flex;
+			flex-direction: column;
+			padding-left: 70px;
+			color: #FFFFFF;
+		}
+
+		.nameheader-text {
+			font-family: Inter;
+			font-size: 75px;
+			margin-bottom: 0px;
+			white-space: nowrap;
+			margin-top: 20px;
+		}
+
+		.nameheader-subtxt {
+			font-family: Inter Thin;
+			font-size: 40px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			white-space: nowrap;
+		}
+
+		.description {
+			display: block;
+			width: 720px;
+			white-space: wrap; 
+			font-family: Inter Thin;
+			font-size: 15px;
+			text-align: justify;
+		}
+
+		.subheader {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			padding: 50px;
+		}
+
+		.btnStream {
+			width: 200px;
+			height: 100px;
+			margin-bottom: -50px;
+		}
+
+		#BtnSpotify { 
+			background-image: url("Buttons/Spotify1.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		#BtnSpotify:hover {
+			background-image: url("Buttons/Spotify2.png");
+			transition: 0.3s;
+			cursor: pointer;
+		}
+
+		#BtnAMusic {
+			background-image: url("Buttons/AMusic1.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		#BtnAMusic:hover {
+			background-image: url("Buttons/AMusic2.png");
+			transition: 0.3s;
+			cursor: pointer;
+		}
+
+		#BtnYtMusic {
+			background-image: url("Buttons/YTMusic1.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		#BtnYtMusic:hover { 
+			background-image: url("Buttons/YTMusic2.png");
+			transition: 0.3s;
+			cursor: pointer;
+		}
+
+
+		@media screen and (max-width: 1244px) {
+			.nameheader-text {
+				font-size: 60px;
+				white-space: nowrap;
+			}
+			.nameheader-subtxt {
+				font-size: 30px;
+				white-space: nowrap;
+			}
+			#NameHeader {
+				width: 990px;
+				padding-top:20px;
+			}
+
+			.slider-frame {
+				display: none;
+			}
+
+			.gradient { 
+				background-image: none;
+				background-color: rgb(26, 26, 26);
+			}
+
+		}	
+		
+
+	</style>
+
+</head>
+
+<body>
+	
+	<div class="header" id="FixedHeader">
+	
+		<div id="Logo">	
+		
+			<img class="item" alt="Mark Santos Music logo" src="Asset 1.png">
+		
+			<p class="item" id="Title">Mark Santos</p>
+		
+		</div>
+		
+		<div id="Navigation">
+			
+			<div class="link" id="CurrentPage">
+				<p>Home</p>
+			</div>
+			
+			<div class="link">
+				<p>Music</p>
+			</div>
+			
+			<div class="link">
+				<p>Notices</p>
+			</div>
+			
+			<div class="link">
+				<p>Merch</p>
+			</div>
+			
+			<div class="link">
+				<p>Social</p>
+			</div>
+		
+		</div>
+	</div>
+	
+	<div class="gradient"> </div>
+	
+	<div class="hero">
+		
+		<div id="NameHeader">
+			
+			<h1 class="nameheader-text">Mark Santos</h1>
+			
+			<p class="nameheader-subtxt">Musician / Multimedia Artist.</p>
+		
+			<p class="description">
+			
+				Hi, I'm Mark, a Filipino artist producing content that you love.
+				As an artist at heart, my works aim to move people & see life from another perspective.
+				My work mostly revolves around graphic design, video production, animation, and of course, music prodcution.
+				Below you'll find my portfolio of creative outputs. 
+				<br><br>
+				For any inquiries, please contact me at marksantosmusic@gmail.com
+				
+
+			</p>
+
+		</div>
+		
+		<div class="slider-frame">
+			
+			<div class="slide-images">
+				
+				<div class="img-container">
+					
+					<img class="slide-image" src="Slideshow/1.png" alt="Mark looking above">
+				
+				</div>
+				
+				<div class="img-container">
+				
+					<img class="slide-image" src="Slideshow/2.png" alt="Mark Valorant">
+				
+				</div>
+				
+				<div class="img-container">
+				
+					<img class="slide-image" src="Slideshow/3.png" alt="Mark JoJo Pose">
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="subheader">
+			<div id="BtnSpotify" class="btnStream"></div>
+			<div id="BtnAMusic" class="btnStream"></div>
+			<div id="BtnYtMusic" class="btnStream"></div>
+	</div>
+</body>
+
+</html>
+
+<!--Mark Santos & Samantha Sampot 2022-->

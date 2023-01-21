@@ -1,0 +1,821 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>Mark Santos | Home</title>
+	
+	<link rel="icon" href="Asset 1.png">
+	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+	
+        <link rel="stylesheet" href="https://www.w3school.com/w3css/4/w3.css">
+
+	<style>
+		
+		html {
+			scroll-behavior: smooth;
+		}
+		
+		::-webkit-scrollbar {
+			width: 10px;
+		}
+
+		::-webkit-scrollbar-thumb {
+			background-color: #ffffa5;
+			border-radius: 10px;
+		}
+
+		::-webkit-scrollbar-thumb:hover {
+			background-color: #d8d885;
+		}
+
+		::-webkit-scrollbar-track {
+			background-color: rgb(26, 26, 26);
+		}
+		
+		body {
+			font-family: Inter;
+			margin: 0px;
+			padding: 0px;
+			background-color: #9f1d29;
+		}
+				
+		.header {
+			display: flex;
+			padding: 8px 8px;
+			background-color: #6b1c22;
+			font-family: Inter Thin;
+			font-size: 10px;
+			color:#FFFFFF;
+			justify-content: space-between;
+			align-self: flex-start;
+			position: sticky;
+		}
+		
+		.item {
+			margin: 0px 3px;
+		}
+
+		.link {
+			z-index: 1;
+			margin: 0px 10px;
+			padding: 0px 15px 0px 15px;
+		}
+		
+		.link:hover {
+			background-image: url("Asset 2.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			cursor: pointer;
+			text-shadow: none;
+			color: black;
+			transition: 0.3s;
+		}
+		
+		#CurrentPage {
+			background-image: url("Asset 2.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			cursor: pointer;
+			text-shadow: 2px 3.5px 1px #ffffff;
+			color: black;
+		}
+		
+		.slider-frame {
+			z-index: -2;
+			overflow:hidden;
+			height: 300px;
+			width: 819.60px;
+		}
+		
+		@-webkit-keyframes slide_animation{
+			0% {left:0px;}
+			10% {left:0px;}
+			20% {left:819.60px;}
+			30% {left:819.60px;}
+			40% {left:1639.2px;}
+			50% {left:1639.2px;}
+			60% {left:819.60px;}
+			70% {left:819.60px;}
+			80% {left:0px;}
+			90% {left:0px;}
+			100% {left:0px;}
+		}
+		
+		.slide-images {
+			width: 3000px;
+			height: 800px;
+			margin: 0 0 0 -1639.2px;
+			position: relative;
+			-webkit-animation-name: slide_animation;
+			-webkit-animation-duration: 33s;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-direction: alternate;
+			-webkit-animation-play-state: running;
+		}
+		
+		.slide-image {
+			height: 300px;
+		}
+
+		.img-container {
+			height: 300px;
+			width: 819.6px;
+			position: relative;
+			float: left;
+			}
+		
+		#Logo {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		#Logo:hover {
+			cursor: pointer;
+		}
+	
+		#Title {
+			font-size: 20px;
+		}
+		
+		#Navigation {
+			display: flex;
+			font-family: "Inter Black";
+			font-style: italic ;
+			font-size: 15px;
+			text-transform: uppercase;
+			align-items: center;
+			text-shadow: 2px 3.5px 1px #000000;
+		}
+
+		.gradient {
+			position: absolute;
+			z-index: -1;
+			height: 300px;
+			width: 100%;
+			background-image: linear-gradient(to right, rgb(26, 26, 26), 75%, rgba(26, 26, 26, 0.2), 80%, rgba(26, 26, 26, 0));
+		}
+
+		.hero {
+			display: flex;
+			justify-content: space-between;
+		}
+		
+		#NameHeader{
+			display: flex;
+			flex-direction: column;
+			padding-left: 70px;
+			color: #FFFFFF;
+		}
+
+		.nameheader-text {
+			font-family: Inter;
+			font-size: 75px;
+			margin-bottom: 0px;
+			white-space: nowrap;
+			margin-top: 20px;
+		}
+
+		.nameheader-subtxt {
+			font-family: Inter Thin;
+			font-size: 40px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			white-space: nowrap;
+		}
+
+		.description {
+			display: block;
+			width: 720px;
+			white-space: wrap; 
+			font-family: Inter Thin;
+			font-size: 15px;
+			text-align: justify;
+		}
+
+		.releasecontainer {
+			width: 90%;
+			height: 310px;
+			background-color:white;
+			margin: 40px;
+			padding: 20px;
+			box-shadow: 15px 15px  #000000;
+			display:flex;
+			flex-direction:column;
+			justify-content: center;
+		}
+
+		.release {
+			display: flex;
+		}
+
+		.albumcover {
+			width: 250x;
+			height: 250px;
+			background-color: black;
+		}
+
+		.cover {
+			width: 250px;
+			height: 250px;
+			border: 2px solid black;
+		}
+
+		.info {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin-left: 20px;
+			margin-right: 20px;
+			height: 265px; 
+			width: 65%;
+		}
+
+		.releasename {
+			font-family: Inter Black;
+			font-size: 50px;
+			margin: -5px 0px -20px 0px;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			width: 100%;
+			height: 1.2em;
+			white-space: nowrap;
+		}
+
+		.releasetype {
+			font-size: 20px;
+		}
+
+		.player {
+			border: 0;
+			width: 100%;
+			height: 42px;
+		}
+
+		main {
+			display: grid;
+			grid-template-columns: repeat(2, 50%);
+			grid-auto-rows: 410px;
+		}
+
+		.subheader {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			padding: 50px;
+		}
+
+		.btnStream {
+			width: 200px;
+			height: 100px;
+			margin-bottom: -50px;
+		}
+
+		#BtnSpotify { 
+			background-image: url("Buttons/Spotify1.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		#BtnSpotify:hover {
+			background-image: url("Buttons/Spotify2.png");
+			transition: 0.3s;
+			cursor: pointer;
+		}
+
+		#BtnAMusic {
+			background-image: url("Buttons/AMusic1.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		#BtnAMusic:hover {
+			background-image: url("Buttons/AMusic2.png");
+			transition: 0.3s;
+			cursor: pointer;
+		}
+
+		#BtnYtMusic {
+			background-image: url("Buttons/YTMusic1.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		#BtnYtMusic:hover { 
+			background-image: url("Buttons/YTMusic2.png");
+			transition: 0.3s;
+			cursor: pointer;
+		}
+
+		#seemore {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+		}
+
+		#btnSeeMore {
+			display: block;
+			background-image: url("Buttons/See\ More.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			height: 90px;
+			width: 250px;
+			margin: 30px;
+			transition: 0.15s;
+		}
+
+		#btnSeeMore:hover {
+			height: 90px;
+			width: 260px;
+			transition: 0.15s;
+			cursor: pointer;
+		}
+
+		@media screen and (max-width: 1795px) {
+			.releasecontainer {
+				margin: 20px;
+			}
+
+			main {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 40px;
+			}
+		}
+
+		@media screen and (max-width: 1244px) {
+			.nameheader-text {
+				font-size: 60px;
+				white-space: nowrap;
+			}
+			.nameheader-subtxt {
+				font-size: 30px;
+				white-space: nowrap;
+			}
+			#NameHeader {
+				width: 990px;
+				padding-top:20px;
+			}
+
+			.slider-frame {
+				display: none;
+			}
+
+			.gradient { 
+				background-image: none;
+				background-color: rgb(26, 26, 26);
+			}
+
+		}	
+		
+		#border {
+			border-top: 0px solid #bbb;
+			border-radius: 5px;
+			width: 20px;
+			align-self: center;
+		}
+
+		.footer {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			width: 100%;
+			padding-top: 30px;
+		}
+
+		.fsm {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+		}
+
+		.finfo {
+			height: 50px;
+			margin-bottom: 20px;
+		}
+
+		.socialmedia {
+			margin: 0px 20px 0px 20px;
+			height: 40px;
+			width: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.scbtn {
+			height: 25px
+		}
+
+		.scbtn:hover {
+			height: 30px;
+			width: 30px;
+			transition: 0.20s;
+			cursor: pointer;
+		}
+
+		.copyright {
+			color: white;
+			text-align: center;
+		}
+
+		.menu {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+
+		.m-item-container {
+			height: 30px;
+			margin: 0px 20px 20px 20px; 
+		}
+
+		.m-item {
+			text-decoration: none; 
+			color: white;
+		}
+		
+		.m-item:hover {
+			color: #ffff00;
+		}
+
+		button {
+			background:black;
+			border: 1px solid #ffff00;
+			padding: 10px;
+			font: inherit;
+			border-color: #ffff00;
+			border-radius: 15px;
+			box-shadow: 0px 5px #ffff00;
+		}
+
+		button:hover {
+			margin-top: 3px;
+			cursor: pointer;
+			transition: 0.20s;
+			box-shadow: none;
+		}
+		
+		button:active {
+			background:black;
+			border: 1px solid #8a7603;
+			box-shadow: 0px 5px #645501;
+		}
+		
+
+	</style>
+
+	<script>
+
+		function OpenFB() {
+			window.open("http://www.facebook.com/marksantosmusic", "_blank");
+		}
+
+		function OpenTWT() {
+			window.open("http://www.twitter.com/marksantosmusic", "_blank");
+		}
+
+		function OpenIG() {
+			window.open("http://www.instagram.com/marksantosmusic", "_blank");
+		}
+
+		function OpenYT() {
+			window.open("http://www.youtube.com/c/marksantosmusic", "_blank");
+		}
+
+		function OpenBC() {
+			window.open ("http://marksantos.bandcamp.com/", "_blank");
+		}
+
+	</script>
+
+</head>
+
+<body>
+	
+	<div class="header" id="FixedHeader">
+	
+		<div id="Logo">	
+		
+			<img class="item" alt="Mark Santos Music logo" src="Asset 1.png">
+		
+			<p class="item" id="Title">Mark Santos</p>
+		
+		</div>
+		
+		<div id="Navigation">
+			
+			<div class="link" id="CurrentPage">
+				<p>Home</p>
+			</div>
+			
+			<div class="link">
+				<p>Music</p>
+			</div>
+			
+			<div class="link">
+				<p>Notices</p>
+			</div>
+			
+			<div class="link">
+				<p>Merch</p>
+			</div>
+			
+			<div class="link">
+				<p>Social</p>
+			</div>
+		
+		</div>
+	</div>
+	
+	<div class="gradient"></div>
+	
+	<div class="hero">
+		
+		<div id="NameHeader">
+			
+			<h1 class="nameheader-text">Mark Santos</h1>
+			
+			<p class="nameheader-subtxt">Musician / Multimedia Artist.</p>
+		
+			<p class="description">
+			
+				Hi, I'm Mark, a Filipino artist producing content that you love.
+				As an artist at heart, my works aim to move people & see life from another perspective.
+				My work mostly revolves around graphic design, video production, animation, and of course, music prodcution.
+				Below you'll find my portfolio of creative outputs. 
+				<br><br>
+				For any inquiries, please contact me at marksantosmusic@gmail.com
+				
+
+			</p>
+
+		</div>
+		
+		<div class="slider-frame">
+			
+			<div class="slide-images">
+				
+				<div class="img-container">
+					
+					<img class="slide-image" src="Slideshow/1.png" alt="Mark looking above">
+				
+				</div>
+				
+				<div class="img-container">
+				
+					<img class="slide-image" src="Slideshow/2.png" alt="Mark Valorant">
+				
+				</div>
+				
+				<div class="img-container">
+				
+					<img class="slide-image" src="Slideshow/3.png" alt="Mark JoJo Pose">
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="subheader">
+			<div id="BtnSpotify" class="btnStream"></div>
+			<div id="BtnAMusic" class="btnStream"></div>
+			<div id="BtnYtMusic" class="btnStream"></div>
+	</div>
+
+	<main>
+
+		<!--Forthright-->
+
+		<div class="releasecontainer">
+			
+			<div class="release">
+
+				<div class="albumcover">
+
+					<img class="cover" alt="Forthright Album Cover" src="https://f4.bcbits.com/img/a2891045172_16.jpg">
+
+				</div>
+
+				<div class="info">
+				
+					<div class="releaseheader">
+
+						<h1 class="releasename">FORTHRIGHT</h1>
+
+						<p class="releasetype">Album - Extended Play</p>
+
+					</div>
+
+					<p class="releasedesc">Mark Santos gives us a glimpse to his life experiences in his four-track debut EP where he contrasts his sexy vocals, sweet harmonies, & funky basslines with dark lyrics, & gritty guitar riffs.</p>
+
+					<p class="releasedate">Released September 1, 2022</p>
+
+				</div>
+
+			</div>
+
+			<iframe class="player" src="https://bandcamp.com/EmbeddedPlayer/album=2173654927/size=small/bgcol=333333/linkcol=e32c14/transparent=true/" seamless><a href="https://marksantos.bandcamp.com/album/forthright">Forthright by Mark Santos</a></iframe>
+				
+		</div>
+
+		<!--Through The War-->
+
+		<div class="releasecontainer">
+			
+			<div class="release">
+
+				<div class="albumcover">
+
+					<img class="cover" alt="Through The War Album Cover" src="https://f4.bcbits.com/img/a2197837742_16.jpg">
+
+				</div>
+
+				<div class="info">
+				
+					<div class="releaseheader">
+
+						<h1 class="releasename">Through the War (Mark Santos Ver.)</h1>
+
+						<p class="releasetype">Single - Original</p>
+
+					</div>
+
+					<p class="releasedesc">A recreation of RJ Barsaga's "Through the War"; used as the OST for the trailer of "Precious", a College output.</p>
+
+					<p class="releasedate">Released June 18, 2022</p>
+
+				</div>
+
+			</div>
+
+			<iframe class="player" src="https://bandcamp.com/EmbeddedPlayer/track=2168491840/size=small/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="https://marksantos.bandcamp.com/track/through-the-war-mark-santos-ver">Through the War (Mark Santos ver.) by Mark Santos</a></iframe>
+
+		</div>
+
+		<!--LPU RAP-->
+
+		<div class="releasecontainer">
+			
+			<div class="release">
+
+				<div class="albumcover">
+
+					<img class="cover" alt="LPU Rap Album Cover" src="https://f4.bcbits.com/img/a1460843536_16.jpg">
+
+				</div>
+
+				<div class="info">
+				
+					<div class="releaseheader">
+
+						<h1 class="releasename">LPU Rap</h1>
+
+						<p class="releasetype">Single - Original</p>
+
+					</div>
+
+					<p class="releasedesc">A jingle for Lyceum of the Philippines University Cavite. Composed by Dir. Lizandro Ferrer, and arranged by Mark Santos. </p>
+
+					<p class="releasedate">Released June 24, 2021</p>
+
+				</div>
+
+			</div>
+
+			<iframe class="player" src="https://bandcamp.com/EmbeddedPlayer/track=2114337413/size=small/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="https://marksantos.bandcamp.com/track/lpu-rap">LPU Rap by Mark Santos</a></iframe>
+
+		</div>
+
+		<!--10/01-->
+
+		<div class="releasecontainer">
+			
+			<div class="release">
+
+				<div class="albumcover">
+
+					<img class="cover" alt="10/01 Album Cover" src="https://f4.bcbits.com/img/a2096995010_16.jpg">
+
+				</div>
+
+				<div class="info">
+				
+					<div class="releaseheader">
+
+						<h1 class="releasename">10/01</h1>
+
+						<p class="releasetype">Album - Long Play</p>
+
+					</div>
+
+					<p class="releasedesc">An album dedicated to the debut birthday of my significant other, Samantha. Production and recording all done by Mark Santos, with special thanks to Jameson Kilroy, Ranran Saycon, Iris Ricalde, Erik James Orsos, & Bernadette Salalila.</p>
+
+					<p class="releasedate">Released October 1, 2020</p>
+
+				</div>
+
+			</div>
+
+			<iframe class="player" src="https://bandcamp.com/EmbeddedPlayer/album=161805890/size=small/bgcol=333333/linkcol=4ec5ec/transparent=true/" seamless><a href="https://marksantos.bandcamp.com/album/10-01">10/01 by Mark Santos</a></iframe>
+
+		</div>
+
+	</main>
+
+	<div id="seemore">
+
+		<div id="btnSeeMore" onclick="OpenBC()"></div>
+
+	</div>
+
+	<hr class="border">
+
+    <footer>
+
+		<div class="footer">
+
+			<div class="fsm">
+
+				<div class="socialmedia">
+
+					<a id="RDFacebook">
+						<img class ="scbtn" id="BtnFacebook" src="Buttons/Facebook.svg" onclick="OpenFB()" alt="Facebook">
+					</a>
+
+				</div>
+
+				<div class="socialmedia">
+
+					<a id="RDTwitter">
+					<img class ="scbtn" id="BtnTwitter" src="Buttons/Twitter.svg" onclick="OpenTWT()" alt="Twitter">
+					</a>
+
+				</div>
+
+				<div class="socialmedia">
+
+					<a id="RDInstagram">
+					<img class ="scbtn" id="BtnInstagram" src="Buttons/Instagram.svg" onclick="OpenIG()" alt="Instagram">
+					</a>
+
+				</div>
+
+				<div class="socialmedia">
+
+					<a id="RDYouTube">
+					<img class ="scbtn" id="BtnYouTube" src="Buttons/YouTube.svg" onclick="OpenYT()" alt="YouTube">
+					</a>
+
+				</div>
+
+			</div>
+
+			<div class="finfo">
+
+				<p class="copyright">
+					Copyright © Mark Santos Music. All rights reserved. Site by Mark Santos
+				</p>
+
+			</div>
+
+			<div class="menu">
+
+				<div class="m-item-container">
+					<button onclick="window.location.href='Terms of Use.pdf';" class="m-item" formtarget="_blank">Terms of Use</a>
+				</div>
+
+				<div class="m-item-container">
+					<button onclick="window.location.href='http://www.linktr.ee/marksantosmusic';" class="m-item" formtarget="_blank">Links</a>
+				</div>
+
+				<div class="m-item-container">
+					<button onclick="window.location.href='https://orteil.dashnet.org/cookieclicker/';" class="m-item" formtarget="_blank">Cookies</a>
+				</div>
+
+			</div>
+
+		</div>
+
+    </footer>
+
+</body>
+
+</html>
+
+<!--Mark Santos & Samantha Sampot 2022-->
